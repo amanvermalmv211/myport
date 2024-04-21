@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio</title>
+    <link rel="website icon" type="jpg" href="Images/logo.jpg">
+    <link rel="stylesheet" href="/StyleCSS/style.css">
+    <style>
+        .contact {
+            background: rgba(0, 0, 0, 0.7) url('/Images/mapImg.png') no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 25px;
+            color: white;
+        }
+
+        .contact h1 {
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid white;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .box {
+            margin: 8px 2px;
+            border-bottom: 2px solid rebeccapurple;
+        }
+
+        .box input {
+            background: none;
+            border: none;
+            padding: 5px;
+            outline: none;
+            font-size: 1.3rem;
+            color: white;
+            /* width: 75%; */
+        }
+
+        .box textarea {
+            background: none;
+            border: none;
+            padding: 6px;
+            outline: none;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        #submit {
+            margin-top: 40px;
+        }
+
+        @media only screen and (max-width: 520px) {
+            .container {
+                width: auto;
+                padding: auto;
+                border: none;
+                background: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="makeItActive">
+        <nav class="navBar h-nav">
+            <div class="myIcon">
+                <span id="spanHeading">Aman's Portfolio</span>
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+            </div>
+            <div class="log v-class">
+                <img src="/Images/logo.jpg" alt="Portfolio">
+                <span id="spanHeading">Aman's Portfolio</span>
+            </div>
+    
+            <ul class="nav-list v-class">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#allAboutMe">About</a></li>
+                <li><a href="#myPopUp" onclick="confetti(), openPopUp()">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+            <div class="logInOut v-class">
+                <a href="#myPopUp" class="btn linkBtn" onclick="confetti(), openPopUp()">Login</a>
+                <a href="#myPopUp" class="btn linkBtn" onclick="confetti(), openPopUp()">Signup</a>
+            </div>
+    
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    
+        <section class="contact">
+            <h1>Get in touch</h1>
+            <section class="formContent">
+                <form action="https://formspree.io/f/mpzgqqkz" method="post">
+                    <div class="container">
+                        <div class="box">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="username" id="email" placeholder="Enter your Name" required>
+                        </div>
+    
+                        <div class="box">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" name="email" id="password" placeholder="Enter your Email" required>
+                        </div>
+    
+                        <div class="box">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <input type="text" name="subject" id="password" placeholder="Enter your Phone Number" required>
+                        </div>
+    
+                        <div class="box">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            <!-- <input type="message" name="name" id="name" placeholder="Write a Message" required> -->
+                            <textarea name="textarea" rows="1" placeholder="Write Message"></textarea>
+                        </div>
+                        <input type="submit" id="submit" value="Submit" class="btn">
+    
+                    </div>
+                </form>
+            </section>
+        </section>
+    
+        <footer class="footer">
+            <section class="twoCont">
+                <section class="socialContact">
+                    <div>
+                        <h1>Get In Touch :</h1>
+                    </div>
+    
+                    <a href="https://www.linkedin.com/in/aman-verma-770ab5252" target="_blank"><i class="fa fa-linkedin-square touchLink" aria-hidden="true"></i></a>
+                    <a href="mailto:amanvermalmv211@gmail.com" target="_blank"><i class="fa fa-envelope touchLink" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/916306805527" target="_blank"><i class="fa fa-whatsapp touchLink" aria-hidden="true" ></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1ele9i6x7lf2r&utm_content=40gsjzh" target="_blank"><i class="fa fa-instagram touchLink" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011377276805" target="_blank"><i class="fa fa-facebook-official touchLink" aria-hidden="true"></i></a>
+    
+                </section>
+    
+                <section class="quickLinks">
+                    <div>
+                        <h1>Quick Links :</h1>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <a href="/pdfs/Aman Verma(Resume).pdf" target="_blank">Resume</a>
+                        <li><a href="index.html#allAboutMe">About</a></li>
+                        <li><a href="index.html#myEducation">Education</a></li>
+                        <li><a href="index.html#mySkills">Skills</a></li>
+                        <li><a href="#myPopUp" onclick="confetti(), openPopUp()">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+            </section>
+    
+            <section class="copyRights">2023 &copy; Aman Verma. All right reserved</section>
+        </footer>
+    </div>
+
+    <section class="popUp" id="myPopUp">
+        <img src="/Images/mySmily.jpg" alt="">
+        <h2>This section do not build yet !</h2>
+        <p>Currently working on it and will attached to portfolio very soon.</p>
+        <button class="btn" onclick="closePopUp()">Go Back</button>
+    </section>
+
+    <script src="/JavaScript/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae1d5c99bd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

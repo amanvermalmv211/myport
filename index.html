@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio</title>
+    <link rel="website icon" type="jpg" href="Images/logo.jpg">
+    <link rel="stylesheet" href="/StyleCSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 60%;
+            padding-bottom: 40px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            background: radial-gradient(ellipse at center, rgba(235, 142, 142, 0.534) 40%, rgba(146, 30, 30, 0.534));
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.8));
+        }
+
+        @media only screen and (max-width: 650px) {
+            .swiper {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="makeItActive">
+        <nav class="navBar h-nav">
+            <div class="myIcon">
+                <span id="spanHeading">Aman's Portfolio</span>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="log v-class">
+                <img src="/Images/logo.jpg" alt="Portfolio">
+                <span id="spanHeading">Aman's Portfolio</span>
+            </div>
+
+            <ul class="nav-list v-class">
+                <li><a href="#">Home</a></li>
+                <li><a href="#allAboutMe">About</a></li>
+                <li><a href="#myPopUp" onclick="confetti(), openPopUp()">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="logInOut v-class">
+                <a href="#myPopUp" class="btn linkBtn" onclick="confetti(), openPopUp()">Login</a>
+                <a href="#myPopUp" class="btn linkBtn" onclick="confetti(), openPopUp()">Signup</a>
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <section class="homeSec">
+            <section class="righthomeSec">
+                <img src="/Images/avtar.png" alt="My Photo" class="avtar">
+            </section>
+
+            <section class="lefthomeSec">
+                <div>
+                    <div><span id="myHeading"></span></div>
+                    <div><span id="element"></span></div>
+
+                </div>
+                <div class="home-btn">
+                    <a href="/pdfs/Aman Verma(Resume).pdf" class="btn linkBtn" target="_blank">Resume</a>
+                    <a href="https://wa.me/916306805527" target="_blank" class="btn linkBtn">WhatsApp</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="eduSec" id="myEducation">
+            <h1>Education</h1>
+            <p>Did schooling from Jawahar Navodaya Vidyalaya Ghazipur U.P.</p>
+            <p>Currently pursuing B.Sc.(Hons.) Computer Science from University Of Delhi</p>
+            <section class="grades">
+                <div class="cards">
+                    <div class="schLogo">
+                        <i class="fa fa-building fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <h3>Secondary(10th)</h3>
+                    <p>94.2%</p>
+                    <p>Year: 2018-2019</p>
+                    <div class="gradeLinkFirst">
+                        <a href="/Images/XIIRes.jpg" class="link">Visit</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="schLogo">
+                        <i class="fa fa-building fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <h3>Senior Secondary(12th)</h3>
+                    <p>(PCM)</p>
+                    <p>89.2%</p>
+                    <p>Year: 2020-2021</p>
+                    <div class="gradeLink">
+                        <a href="/Images/XRes.jpg" class="link">Visit</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="schLogo">
+                        <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <h3>B.Sc.(Hons.) CS</h3>
+                    <p>1st Year: 8.5CGPA</p>
+                    <p>2nd Year: 7.8CGPA</p>
+                    <p>Year: 2021-2024</p>
+                    <div class="gradeLink">
+                        <a href="/Images/CollegeRes.png" class="link">Visit</a>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="setHeading" id="allAboutMe">
+            <div>
+                <h1>About Me</h1>
+            </div>
+            <section class="abtContainer">
+                <section class="abtLeftSec">
+                    <div>
+                        <h1>Hello there! 👋</h1>
+                        <p>I'm <span id='cgColor'>Aman Verma</span>, a passionate and innovative developer with a love
+                            for all things tech. My journey in the world of programming has been an exciting one,
+                            constantly filled with opportunities to learn and grow. My expertise lies in web
+                            development, and I am constantly exploring new technologies and frameworks. From programming
+                            languages to
+                            cutting-edge frameworks, I am always eager to explore the latest innovations and trends.
+                            When I'm not busy coding, you can find me reading books or playing games. I'm proud of the
+                            work I've put into each of my <a id='cgColor' href="#myPopUp"
+                                onclick="confetti(), openPopUp()">projects</a> , and they represent the culmination of
+                            my skills and dedication to web development. Web development is my creative playground,
+                            where I breathe life into ideas, I find joy in every aspect of web development - from
+                            conceptualizing intuitive designs to implementing robust back-end functionality.. If you
+                            have any questions, feedback, or opportunities for collaboration related to these projects,
+                            don't hesitate to reach out. Feel free to explore my portfolio to discover some of the
+                            exciting projects I've made. I'm always excited to connect with like-minded individuals, so
+                            don't hesitate to reach out if you want to collaborate or discuss technology.</p>
+                    </div>
+                    <a href="/pdfs/Aman Verma(Resume).pdf" class="btn linkBtn" target="_blank">Resume</a>
+                </section>
+
+                <section class="abtRightSec">
+                    <img src="/Images/myImg.png" alt="">
+                </section>
+            </section>
+        </section>
+
+        <section class="skills" id="mySkills">
+            <div class="skillImg">
+                <div class="bottom">
+                    <h1>Skills</h1>
+                </div>
+                <img src="/Images/skill.png" alt="">
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/cpp.png" alt=""></div>
+                        <div class="textCont">
+                            <p>C++</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/java.png" alt=""></div>
+                        <div class="textCont">
+                            <p>Java</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/kotlin.png" alt=""></div>
+                        <div class="textCont">
+                            <p>Kotlin</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/python.png" alt=""></div>
+                        <div class="textCont">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/js.png" alt=""></div>
+                        <div class="textCont">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/webDev.png" alt=""></div>
+                        <div class="textCont">
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lanImg textCont"><img src="/Images/appDev.png" alt=""></div>
+                        <div class="textCont">
+                            <p>App Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <section class="twoCont">
+                <section class="socialContact">
+                    <div>
+                        <h1>Get In Touch :</h1>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/aman-verma-770ab5252" target="_blank"><i
+                            class="fa fa-linkedin-square touchLink" aria-hidden="true"></i></a>
+                    <a href="mailto:amanvermalmv211@gmail.com" target="_blank"><i class="fa fa-envelope touchLink"
+                            aria-hidden="true"></i></a>
+                    <a href="https://wa.me/916306805527" target="_blank"><i class="fa fa-whatsapp touchLink"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1ele9i6x7lf2r&utm_content=40gsjzh"
+                        target="_blank"><i class="fa fa-instagram touchLink" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011377276805" target="_blank"><i
+                            class="fa fa-facebook-official touchLink" aria-hidden="true"></i></a>
+
+                </section>
+
+                <section class="quickLinks">
+                    <div>
+                        <h1>Quick Links :</h1>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <a href="/pdfs/Aman Verma(Resume).pdf" target="_blank">Resume</a>
+                        <li><a href="#allAboutMe">About</a></li>
+                        <li><a href="#myEducation">Education</a></li>
+                        <li><a href="#mySkills">Skills</a></li>
+                        <li><a href="#myPopUp" onclick="confetti(), openPopUp()">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="copyRights">2023 &copy; Aman Verma. All right reserved</section>
+        </footer>
+    </div>
+
+    <section class="popUp" id="myPopUp">
+        <img src="/Images/mySmily.jpg" alt="">
+        <h2>This section do not build yet !</h2>
+        <p>Currently working on it and will attached to portfolio very soon.</p>
+        <button class="btn" onclick="closePopUp()">Go Back</button>
+    </section>
+
+    <script src="/JavaScript/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae1d5c99bd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#myHeading', {
+            strings: ["<span id='spanHeading'>Unveiling Creativity :  A journey through my Portfolio.</span><br><span id='details'>Hi, I'm <span id='cgColor'>Aman Verma</span> and I find joy in every aspect of <span id='cgColor'>web development.</span></span>"],
+            typeSpeed: 25,
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

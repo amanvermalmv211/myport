@@ -1,0 +1,73 @@
+.secNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px;
+}
+
+.secLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.secLogo img{
+    height: 40px;
+    width: 40px;
+}
+
+.secNav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.secNav-list li{
+    list-style: none;
+}
+
+.secNav-list li a{
+    font-size: 17px;
+    padding: 2px 25px;
+    text-decoration: none;
+}
+
+.myNotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    /* border: 2px solid black; */
+}
+
+.myNotes h1{
+    margin: 10px;
+    /* text-align: justify; */
+}
+
+.myNotes p{
+    text-align: justify;
+}
+
+.notes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.notesImg{
+    width: 200px;
+    height: 100px;
+}
+
+.notesImg img{
+    width: 200px;
+    height: 100px;
+}
